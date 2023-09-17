@@ -29,3 +29,12 @@ and everytime you want to clone or pull the submodule:
 git clone-all
 git pull-all
 ```
+## Running
+
+The idea is to run both the **backend** and **frontend** on **one** docker container and the **mongodb** on another.
+For this, the docker compose is configured.
+Running the following command should do the trick
+
+```bash
+docker compose build && docker compose up
+```

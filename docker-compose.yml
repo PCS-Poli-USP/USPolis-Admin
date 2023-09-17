@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  apps:
+    build:
+      dockerfile: Dockerfile
+      context: .
+    ports:
+      - "3000:3000"
+      - "5000:5000"
+    environment:
+      - CONN_STR=mongodb://user:pass@mongodb
+    depends_on:
+      - mongodb
+  mongodb:
+    image: mongodb/mongodb-community-server:6.0-ubi8
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=user
+      - MONGO_INITDB_ROOT_PASSWORD=pass
+    # ports:
+    #   - "27017:27017"
