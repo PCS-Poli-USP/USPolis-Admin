@@ -1,0 +1,6 @@
+[submodule "USPolis-Admin-Backend"]
+	path = USPolis-Admin-Backend
+	url = https://github.com/PCS-Poli-USP/USPolis-Admin-Backend.git
+[submodule "USPolis-Admin-Frontend"]
+	path = USPolis-Admin-Frontend
+	url = https://github.com/PCS-Poli-USP/USPolis-Admin-Frontend.git
