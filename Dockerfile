@@ -21,6 +21,8 @@ COPY . /home/${USER}/
 
 RUN chown -R ${USER}:${USER} /home/${USER}
 
+USER ${USER}
+
 # clone repos
 RUN git clone ${BACKEND_REPO} && git clone ${FRONTEND_REPO}
 
@@ -31,8 +33,6 @@ RUN mkdir -p ./${FRONTEND_DIR}/node_modules/.cache \
 
 # install backend dependencies
 RUN pip install --no-cache-dir -r $BACKEND_DIR/requirements.txt
-
-USER ${USER}
 
 EXPOSE 3000 5000
 
