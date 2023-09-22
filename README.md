@@ -2,33 +2,6 @@
 
 This is the main repo of the USPolis Admin application. It contains the two repositories for Backend and Frontend and sets the configurations for docker.
 
-## Cloning the repo
-
-This is a repo with **submodules**, so make sure to git clone it correctly.
-
-```bash
-git clone --recurse-submodules <url>
-```
-
-And for pulling the submodules repos:
-
-```bash
-git pull --recurse-submodules <url>
-```
-
-I personally prefer seting an alias:
-
-```bash
-git config --global alias.clone-all 'clone --recurse-submodules'
-git config --global alias.pull-all 'pull --recurse-submodules'
-```
-
-and everytime you want to clone or pull the submodule:
-
-```bash
-git clone-all
-git pull-all
-```
 ## Running
 
 The idea is to run both the **backend** and **frontend** on **one** docker container and the **mongodb** on another.
@@ -38,3 +11,11 @@ Running the following command should do the trick
 ```bash
 docker compose build && docker compose up
 ```
+
+## VSCode Usage
+
+To use with vscode, you must first intall the extensions `Remote Explorer` and `Docker`.
+
+After raising the containers, openning the `Remote Explorer` should reveal two docker containers of the compose we've done: one for the **applications** and another for the **database**
+
+Click connecto to the database one and start coding!
