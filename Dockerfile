@@ -13,7 +13,7 @@ RUN apt-get update \
 
 RUN useradd -m -s /bin/bash ${USER}\
     && echo '${USER} ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers \
-    && usermod -aG sudo ${USER}
+    && echo "$USER ALL=(ALL) NOPASSWD:ALL" > /etc/sudoers.d/$USER
 
 WORKDIR /home/${USER}
 
