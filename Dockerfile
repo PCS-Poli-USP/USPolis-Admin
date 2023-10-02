@@ -15,9 +15,9 @@ RUN useradd -m -s /bin/bash ${USER}\
     && echo '${USER} ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers \
     && echo "$USER ALL=(ALL) NOPASSWD:ALL" > /etc/sudoers.d/$USER
 
-WORKDIR /home/${USER}
+WORKDIR /home/${USER}/applications
 
-COPY . /home/${USER}/
+COPY . /home/${USER}/applications
 
 RUN chown -R ${USER}:${USER} /home/${USER}
 
