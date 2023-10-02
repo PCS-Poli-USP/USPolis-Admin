@@ -21,6 +21,8 @@ COPY . /home/${USER}/applications
 
 RUN chown -R ${USER}:${USER} /home/${USER}
 
+RUN echo "fs.inotify.max_user_watches=524288" >> /etc/sysctl.conf
+
 USER ${USER}
 
 # clone repos
