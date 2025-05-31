@@ -31,4 +31,6 @@ A complete documentation is here at repository [wiki](https://github.com/PCS-Pol
 > We are still working on docs...
 
 ## How to contribute
-Like the project and want to help us? Send a email to uspolis@usp.br and contact us! We are be happy to have someone working on our project.
+Like the project and want to help us? Send a email to uspolis@usp.br and contact us! 
+
+We will be happy to have someone working on our project.
