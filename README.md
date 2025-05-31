@@ -27,7 +27,7 @@ The main principle of USPolis is to help people, is a open-source software made 
 
 A complete documentation is here at repository [wiki](https://github.com/PCS-Poli-USP/USPolis-Admin/wiki). There you will find both [frontend][F] and [backend][B] documentations, how to set the enviroments, develop, test and run. Also there you will find the business rules and diagrams explaning how the models are relationed on database (EER Diagrams).
 
-> !ALERT
+> [!WARNING]
 > We are still working on docs...
 
 ## How to contribute
