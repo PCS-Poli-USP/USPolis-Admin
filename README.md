@@ -1,45 +1,24 @@
+[U]: https://www.uspolis.com.br
+[B]: https://github.com/PCS-Poli-USP/USPolis-Admin-Backend
+[F]: https://github.com/PCS-Poli-USP/USPolis-Admin-Frontend
+
 # USPolis-Admin
+![USPolis-removebg-preview](https://github.com/user-attachments/assets/cafd3d91-556f-478c-bf35-723cade70833)
 
-This is the main repo of the USPolis Admin application. It contains the two repositories for Backend and Frontend and sets the configurations for docker.
+[USPolis](https://www.uspolis.com.br) is a open-source software for classroom management and allocation. Once the allocation is made, the information is distributed by the [administrative web site][U] or the [mobile application](https://www.uspolis.com.br/index#section4).
 
-## Running
+USPolis is currently used on 
 
-The idea is to run both the **backend** and **frontend** on **one** docker container and the **mongodb** on another.
-For this, the docker compose is configured.
-Running the following command should do the trick
+## Table of contents
+1. [Project Focus]()
+2. [Project Principles]()
+3. [Documentation]()
+4. [How to contribute]()
 
-```bash
-docker compose build && docker compose up
-```
+## Project Focus
 
-## VSCode Usage
+## Project Principles
 
-To use with vscode, you must first intall the extensions `Remote Explorer` and `Docker`.
+## Documentation
 
-After raising the containers, openning the `Remote Explorer` should reveal two docker containers of the compose we've done: one for the **applications** and another for the **database**
-
-Click connecto to the database one and start coding!
-
-## Connecting to MongoDB
-
-### Connect to Container
-
-To interact with your mongodb raised on docker compose, you must first connect to the container itself. To do this, you can use either the VSCode Remote Explorer and attach a VSCode instance to the container, or use your own ```docker``` command on terminal, like this:
-
-```bash
-docker exec -it uspolis-admin-mongodb-1 /bin/bash
-```
-
-### Launch MongoSH
-
-Now that we're connected, we must launch the ```mongosh```, the cli program to interact with the running database. However, we must inform the credentials on the command, becouse our database is being created with user and password in our docker-compose file. For now, our credentials are **user:pass**, so the command is this one:
-
-```bash
-mongosh -u user -p pass
-```
-
-Once you-ve launched it, you can start using the mongosh commands, that you can find in MongoDB documentation. An example is the command to list databases:
-
-```mongosh
-show dbs
-```
+## How to contribute
