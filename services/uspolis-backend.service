@@ -1,0 +1,14 @@
+[Unit]
+Description=USPolis Backend Service
+After=network.target
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/diskb/home/backend
+Environment=PATH=/home/ubuntu/.local/bin:/usr/bin:/bin
+ExecStart=/home/ubuntu/start_uspolis_back.sh
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
