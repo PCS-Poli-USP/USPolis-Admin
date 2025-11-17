@@ -7,7 +7,7 @@
 
 [USPolis](https://www.uspolis.com.br) is a open-source software for classroom management and allocation. Once the allocation is made, the information is distributed by the [administrative web site][U] or the [mobile application](https://www.uspolis.com.br/index#section4).
 
-USPolis is currently used on Polytechnic School of University of São Paulo (Poli-USP), have been used in several buildings that compoes the Polytechnic School, also have more than 2000 downloads on app stores and every semester is used by hundreds of students. The administrative web site recently was released for students to search for yours subjects, reservations and similars.
+USPolis is currently used on Polytechnic School of University of São Paulo (Poli-USP), have been used in several buildings that compose the Polytechnic School, also have more than 2000 downloads on app stores and every semester is used by hundreds of students. The administrative web site recently was released for students to search for yours subjects, reservations and similars.
 
 ## Table of contents
 1. [Project Focus](#project-focus)
@@ -17,7 +17,9 @@ USPolis is currently used on Polytechnic School of University of São Paulo (Pol
 
 ## Project Focus
 
-The project focus is to create a efficiently, robust and accurate software to classrooms management. The main difference between USPolis and others solutions is that USPolis is based on class/subjects and classrooms, not only classrooms and events. Since the current project focus is for university enviroment, we have developed features that help secretaries jobs, like calendars, conflicts checking, reservations (currently the only reservation is for classrooms). The software has also developed several features that facilitates the comunication between the students and the secretaries, allowing the students to solicate classrooms reservations directly by the system. At the moment we are studing the possibility to allow the admin system to manage professors schedules and people management (for courses).
+The project focus is to create a efficiently, robust and accurate software to classrooms management. The main difference between USPolis and others solutions is that USPolis is based on class/subjects and classrooms, not only classrooms and events. Since the current project focus is for a university enviroment, we have developed features that help secretaries jobs, like calendars, conflicts checking, reservations (currently the only reservation is for classrooms). 
+
+The software has also developed several features that facilitates the comunication between the students and the secretaries, allowing the students to solicate classrooms reservations directly by the system. At the moment we are studing the possibility to allow the admin system to manage professors schedules and people management (for courses).
 
 ## Project Principles
 
